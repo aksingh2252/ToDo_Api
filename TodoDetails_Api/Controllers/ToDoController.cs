@@ -30,9 +30,9 @@ namespace TodoDetails_Api.Controllers
                 response.Data = list.ToList();
 
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                response.Message = e.Message;
+                response.Message = ex.Message;
             }
             return response;
         }
